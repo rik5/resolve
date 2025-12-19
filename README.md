@@ -6,8 +6,29 @@ A deterministic identity-resolution inspector for Linux and cross-platform syste
 
 ## Installation
 
+### Prerequisites
+
+- [Rust](https://rustup.rs/) (install via rustup if not already installed)
+
+### Build from Source
+
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/resolve.git
+cd resolve
+
+# Build the release binary
 cargo build --release
+
+# The binary will be available at target/release/resolve
+./target/release/resolve --help
+```
+
+### Install Globally (Optional)
+
+```bash
+# After building, you can copy to a directory in your PATH
+sudo cp target/release/resolve /usr/local/bin/
 ```
 
 ## Usage
